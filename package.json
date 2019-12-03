@@ -1,5 +1,5 @@
 {
-  "name": "@ugu/vue-component",
+  "name": "ugu-vue-component",
   "version": "0.0.1",
   "description": "基于Vue实现的组件库",
   "main": "index.js",
