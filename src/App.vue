@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <u-button></u-button>
+    <u-button>11</u-button>
   </div>
 </template>
 
