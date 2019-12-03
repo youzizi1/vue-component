@@ -19,5 +19,9 @@
   "homepage": "https://github.com/youzizi1/vue-component#readme",
   "dependencies": {
     "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   }
 }
