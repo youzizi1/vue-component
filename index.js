@@ -1,3 +1,5 @@
-import UButton from "./src/components/UButton.vue";
+import UButton from './src/components/UButton.vue'
 
-export { UButton };
+export {
+  UButton
+}
