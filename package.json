@@ -2,10 +2,10 @@
   "name": "ugu-vue-component",
   "version": "0.0.1",
   "description": "基于Vue实现的组件库",
-  "main": "index.js",
+  "main": "build/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
+    "build": "webpack --config config/config.prod.js",
     "dev": "webpack-dev-server --config config/config.dev.js"
   },
   "repository": {
