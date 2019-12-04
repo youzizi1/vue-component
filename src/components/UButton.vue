@@ -22,12 +22,6 @@ export default {
         return icons.includes(val)
       }
     },
-    iconPos: {
-      validator: val => {
-        const iconPosList = ['left', 'right']
-        return iconPosList.includes(val)
-      }
-    },
     circle: {
       type: Boolean,
       default: false
@@ -51,12 +45,14 @@ export default {
 @import url("//at.alicdn.com/t/font_1543086_ogx537c21t.css");
 
 .button {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 78px;
   height: 32px;
   border: 1px solid #ebedf0;
+  outline: none;
   background-color: #fff;
   font-size: 14px;
   cursor: pointer;
@@ -64,6 +60,17 @@ export default {
   &:disabled {
     opacity: 0.5;
     color: #000;
+  }
+
+  &:active::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ccc;
+    opacity: 0.2;
   }
 
   &.primary {

@@ -14,8 +14,10 @@
       <div class="button-group">
         <h3>图标按钮</h3>
         <div class="button-group-content">
-          <u-button iconPos="left" icon="loading">加载中</u-button>
-          <u-button iconPos="left" icon="like">喜欢</u-button>
+          <u-button icon="loading">Loading</u-button>
+          <u-button icon="like">Like</u-button>
+          <u-button icon="loading" />
+          <u-button icon="like" />
         </div>
       </div>
       <div class="button-group">
