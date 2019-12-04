@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'vcfont';  /* project id 1543086 */
+  src: url('//at.alicdn.com/t/font_1543086_213lt1la47j.eot');
+  src: url('//at.alicdn.com/t/font_1543086_213lt1la47j.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1543086_213lt1la47j.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1543086_213lt1la47j.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1543086_213lt1la47j.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1543086_213lt1la47j.svg#vcfont') format('svg');
+}
+
+.vcfont {
+  font-family: "vcfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
