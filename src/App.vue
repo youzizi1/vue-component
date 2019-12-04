@@ -39,7 +39,7 @@
 </template>
 
 <script>
-import UButton from './components/UButton.vue'
+import UButton from '@/components/UButton.vue'
 
 export default {
   components: {
