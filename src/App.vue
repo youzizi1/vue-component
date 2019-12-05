@@ -21,7 +21,7 @@
         </div>
       </div>
       <div class="button-group">
-        <h3>图标形状</h3>
+        <h3>按钮形状</h3>
         <div class="button-group-content">
           <u-button type="primary">方形</u-button>
           <u-button type="primary" :circle="true">圆形</u-button>
