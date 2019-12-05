@@ -1,0 +1,27 @@
+language: node_js
+
+node_js: stable
+
+cache:
+  directories:
+    - node_modules
+
+install:
+  - npm install
+
+script:
+  - npm run deploy
+
+after_script: 
+  - cd ./dist
+  - git add .
+  - git commit -m "Travis CI Auto Builder :$(date '+%Y-%m-%d %H:%M:%S' -d '+8 hour')"
+  - git push --force --quiet "https://${blog_token}@${BLOG_REF}" master:gh-pages
+
+branches:
+  only:
+    - master # 触发持续集成的分支
+
+env:
+  global:
+    - BLOG_REF: github.com/youzizi1/vue-component.git
