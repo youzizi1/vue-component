@@ -1,3 +1,4 @@
+# 示例
 language: node_js
 
 node_js: stable
@@ -12,16 +13,19 @@ install:
 script:
   - npm run deploy
 
-after_script: 
+after_script: # 最后执行的命令
   - cd ./dist
+  - git init
+  - git config user.name "ugu"
+  - git config user.email "yinyun957@gmail.com"
   - git add .
   - git commit -m "Travis CI Auto Builder :$(date '+%Y-%m-%d %H:%M:%S' -d '+8 hour')"
-  - git push --force --quiet "https://${blog_token}@${BLOG_REF}" master:gh-pages
+  - git push --force --quiet "https://${vuecomponent_token}@${BLOG_REF}" master:gh-pages
 
 branches:
   only:
-    - master # 触发持续集成的分支
+    - master
 
 env:
   global:
-    - BLOG_REF: github.com/youzizi1/vue-component.git
+    - VC_REF: github.com/youzizi1/vue-component.git
